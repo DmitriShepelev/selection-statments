@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace SelectionStatments
 {
@@ -15,7 +15,29 @@ namespace SelectionStatments
             // TODO #1: Add the method implementation. Restrictions:
             // - the method can only use the nested if...else statements;
             // - the method cannot use additional variables.
-            throw new NotImplementedException();
+            if (first > second)
+            {
+                if (first > third)
+                {
+                    Console.WriteLine($"Number {first} is the largest");
+                }
+            }
+
+            if (second > first)
+            {
+                if (second > third)
+                {
+                    Console.WriteLine($"Number {second} is the largest");
+                }
+            }
+
+            if (third > first)
+            {
+                if (third > second)
+                {
+                    Console.WriteLine($"Number {third} is the largest");
+                }
+            }
         }
 
         /// <summary>
@@ -75,7 +97,7 @@ namespace SelectionStatments
             // TODO #5: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement.
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Writes on base on the DayOfWeek enumeration whether a particular date is
         /// - a weekend, writes "The weekend.";
@@ -89,7 +111,7 @@ namespace SelectionStatments
             // TODO #6: Add the method implementation. Restriction: the method can only use the cascaded if...else statement and conditional logical operators.
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Determines on base on the DayOfWeek enumeration whether a particular date is
         /// - a weekend, writes "The weekend.";
@@ -189,7 +211,7 @@ namespace SelectionStatments
             // TODO #12: Add the method implementation. Restriction: the method can only use the cascaded if...else statement and conditional operations.
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Returns the length of the integer's string presentation.
         /// </summary>
@@ -200,7 +222,7 @@ namespace SelectionStatments
             // TODO #13: Add the method implementation. Restriction: the method can only use the switch expression and conditional operations.
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Returns the value of enum <see cref="SelectionStatments.Month"/> that corresponds to the given integer
         /// - or
@@ -230,7 +252,7 @@ namespace SelectionStatments
             // TODO #15: Add the method implementation. Restriction: the method can only use the switch statement.
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Returns the value of enum <see cref="SelectionStatments.Month"/> that corresponds to the given integer
         /// - or
