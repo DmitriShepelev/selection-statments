@@ -21,19 +21,18 @@ namespace SelectionStatments
                 {
                     Console.WriteLine($"Number {first} is the largest");
                 }
+                else
+                {
+                    Console.WriteLine($"Number {third} is the largest");
+                }
             }
-
-            if (second > first)
+            else
             {
                 if (second > third)
                 {
                     Console.WriteLine($"Number {second} is the largest");
                 }
-            }
-
-            if (third > first)
-            {
-                if (third > second)
+                else
                 {
                     Console.WriteLine($"Number {third} is the largest");
                 }
@@ -51,7 +50,14 @@ namespace SelectionStatments
             // TODO #2: Add the method implementation. Restrictions:
             // - the method can only use the if...else statement and ?: ternary operators;
             // - the method cannot use additional variables.
-            throw new NotImplementedException();
+            if (first > second)
+            {
+                Console.WriteLine($"Number {(first > third ? first : third)} is the largest");
+            }
+            else if (second > first)
+            {
+                Console.WriteLine($"Number {(second > third ? second : third)} is the largest");
+            }
         }
 
         /// <summary>
@@ -65,7 +71,18 @@ namespace SelectionStatments
             // TODO #3: Add the method implementation. Restrictions:
             // - the method can only use the if...else statement and conditional logical operators;
             // - the method cannot use additional variables.
-            throw new NotImplementedException();
+            if (first > second && first > third)
+            {
+                Console.WriteLine($"Number {first} is the largest");
+            }
+            else if (second > third)
+            {
+                Console.WriteLine($"Number {second} is the largest");
+            }
+            else
+            {
+                Console.WriteLine($"Number {third} is the largest");
+            }
         }
 
         /// <summary>
@@ -79,7 +96,22 @@ namespace SelectionStatments
         public static void HowOldAreYouReactionWithCascadedIfElse(int userAge)
         {
             // TODO #4: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement.
-            throw new NotImplementedException();
+            if (userAge >= 65)
+            {
+                Console.WriteLine("Enjoy your retirement!");
+            }
+            else if (userAge >= 21)
+            {
+                Console.WriteLine("Fancy an alcoholic beverage?");
+            }
+            else if (userAge >= 18)
+            {
+                Console.WriteLine("You're old enough to drive.");
+            }
+            else
+            {
+                Console.WriteLine("You are too young to drive, drink, or retire.");
+            }
         }
 
         /// <summary>
@@ -95,7 +127,30 @@ namespace SelectionStatments
         public static void WriteInformationAboutDailyDownloadsWithCascadedIfElse(int countOfDailyDownloads)
         {
             // TODO #5: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement.
-            throw new NotImplementedException();
+            if (countOfDailyDownloads <= 0)
+            {
+                Console.WriteLine("No downloads.");
+            }
+            else if (countOfDailyDownloads < 100)
+            {
+                Console.WriteLine("Daily downloads: 1-100.");
+            }
+            else if (countOfDailyDownloads < 1000)
+            {
+                Console.WriteLine("Daily downloads: 100-1,000.");
+            }
+            else if (countOfDailyDownloads < 10_000)
+            {
+                Console.WriteLine("Daily downloads: 1,000-10,000.");
+            }
+            else if (countOfDailyDownloads < 100_000)
+            {
+                Console.WriteLine("Daily downloads: 10,000-100,000.");
+            }
+            else
+            {
+                Console.WriteLine("Daily downloads: 100,000+.");
+            }
         }
 
         /// <summary>
@@ -109,7 +164,7 @@ namespace SelectionStatments
         public static void WriteTheInformationAboutDayWithIfElse(DayOfWeek dayOfWeek)
         {
             // TODO #6: Add the method implementation. Restriction: the method can only use the cascaded if...else statement and conditional logical operators.
-            throw new NotImplementedException();
+            if ( )
         }
 
         /// <summary>
