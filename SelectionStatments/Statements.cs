@@ -13,9 +13,6 @@ namespace SelectionStatments
         /// <param name="third">Third number.</param>
         public static void WriteLargestWithNestedIfElse(int first, int second, int third)
         {
-            // TODO #1: Add the method implementation. Restrictions:
-            // - the method can only use the nested if...else statements;
-            // - the method cannot use additional variables.
             if (first > second)
             {
                 if (first > third)
@@ -48,9 +45,6 @@ namespace SelectionStatments
         /// <param name="third">Third number.</param>
         public static void WriteLargestWithIfElseAndTernaryOperator(int first, int second, int third)
         {
-            // TODO #2: Add the method implementation. Restrictions:
-            // - the method can only use the if...else statement and ?: ternary operators;
-            // - the method cannot use additional variables.
             if (first > second)
             {
                 Console.WriteLine($"Number {(first > third ? first : third)} is the largest");
@@ -69,9 +63,6 @@ namespace SelectionStatments
         /// <param name="third">Third number.</param>
         public static void WriteLargestWithIfElseAndConditionLogicalOperators(int first, int second, int third)
         {
-            // TODO #3: Add the method implementation. Restrictions:
-            // - the method can only use the if...else statement and conditional logical operators;
-            // - the method cannot use additional variables.
             if (first > second && first > third)
             {
                 Console.WriteLine($"Number {first} is the largest");
@@ -96,7 +87,6 @@ namespace SelectionStatments
         /// <param name="userAge">User's age is more or equals zero.</param>
         public static void HowOldAreYouReactionWithCascadedIfElse(int userAge)
         {
-            // TODO #4: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement.
             if (userAge >= 65)
             {
                 Console.WriteLine("Enjoy your retirement!");
@@ -127,7 +117,6 @@ namespace SelectionStatments
         /// <param name="countOfDailyDownloads">Count of daily downloads more or equals zero.</param>
         public static void WriteInformationAboutDailyDownloadsWithCascadedIfElse(int countOfDailyDownloads)
         {
-            // TODO #5: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement.
             if (countOfDailyDownloads <= 0)
             {
                 Console.WriteLine("No downloads.");
@@ -164,7 +153,6 @@ namespace SelectionStatments
         /// <param name="dayOfWeek">Day of week.</param>
         public static void WriteTheInformationAboutDayWithIfElse(DayOfWeek dayOfWeek)
         {
-            // TODO #6: Add the method implementation. Restriction: the method can only use the cascaded if...else statement and conditional logical operators.
             if (dayOfWeek == DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday)
             {
                 Console.WriteLine("The weekend.");
@@ -193,7 +181,6 @@ namespace SelectionStatments
         /// <param name="dayOfWeek">Day of week.</param>
         public static void WriteTheInformationAboutDayWithSwitchStatement(DayOfWeek dayOfWeek)
         {
-            // TODO #7: Add the method implementation. Restriction: the method can only use the switch statement.
             switch (dayOfWeek)
             {
                 case DayOfWeek.Saturday:
@@ -230,7 +217,6 @@ namespace SelectionStatments
         /// <returns>The message with information about the type of integer.</returns>
         public static string GetTypeOfIntegerWithCascadedIfElse(object arg)
         {
-            // TODO #8: Add the method implementation. Restrictions: the method can only use the cascaded if...else statement;
             if (arg != null && arg.GetType() == typeof(sbyte))
             {
                 return $"{arg} is sbyte.";
@@ -285,7 +271,6 @@ namespace SelectionStatments
         /// <returns>The message with information about the type of integer.</returns>
         public static string GetTypeOfIntegerWithSwitchStatement(object arg)
         {
-            // TODO #9: Add the method implementation. Restrictions: the method can only use the switch statement.
             switch (arg)
             {
                 case sbyte _:
@@ -325,7 +310,6 @@ namespace SelectionStatments
         /// <returns>The message with information about the type of integer.</returns>
         public static string GetTypeOfIntegerWithSwitchExpression(object arg)
         {
-            // TODO #10: Add the method implementation. Restrictions: the method can only use the switch expression.
             return arg switch
             {
                 sbyte _ => $"{arg} is sbyte.",
@@ -351,7 +335,6 @@ namespace SelectionStatments
         /// <param name="month">Source month.</param>
         public static void WriteTheInformationAboutSeasonsWithSwitchStatement(Month month)
         {
-            // TODO #11: Add the method implementation. Restrictions: the method can only use the switch statement.
             switch (month)
             {
                 case Month.December:
@@ -387,7 +370,6 @@ namespace SelectionStatments
         /// <returns>The length of the integer's string presentation.</returns>
         public static byte GetLengthWithCascadedIfElse(int number)
         {
-            // TODO #12: Add the method implementation. Restriction: the method can only use the cascaded if...else statement and conditional operations.
             if (number > -10 && number < 10)
             {
                 return 1;
@@ -437,7 +419,6 @@ namespace SelectionStatments
         /// <returns>The length of the integer's string presentation.</returns>
         public static byte GetLengthWithSwitchExpression(int number)
         {
-            // TODO #13: Add the method implementation. Restriction: the method can only use the switch expression and conditional operations.
             return true switch
             {
                 bool _ when number > -10 && number < 10 => 1,
@@ -464,7 +445,6 @@ namespace SelectionStatments
         /// </returns>
         public static Month? GetMonthWithCascadedIfElse(int month)
         {
-            // TODO #14: Add the method implementation. Restriction: the method can only use the cascaded if...else statement.
             if (month == 1)
             {
                 return Month.January;
@@ -534,7 +514,6 @@ namespace SelectionStatments
         /// </returns>
         public static Month? GetMonthWithSwitchStatement(int month)
         {
-            // TODO #15: Add the method implementation. Restriction: the method can only use the switch statement.
             switch (month)
             {
                 case 1:
@@ -577,7 +556,6 @@ namespace SelectionStatments
         /// </returns>
         public static Month? GetMonthWithSwitchExpression(int month)
         {
-            // TODO #16: Add the method implementation. Restriction: the method can only use the switch expression.
             return month switch
             {
                 1 => Month.January,
