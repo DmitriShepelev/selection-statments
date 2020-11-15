@@ -369,39 +369,39 @@ namespace SelectionStatments
         /// <returns>The length of the integer's string presentation.</returns>
         public static byte GetLengthWithCascadedIfElse(int number)
         {
-            if (number > -10 && number < 10)
+            if (number / 10 == 0)
             {
                 return 1;
             }
-            else if (number > -100 && number < 100)
+            else if (number / 100 == 0)
             {
                 return 2;
             }
-            else if (number > -1000 && number < 1000)
+            else if (number / 1000 == 0)
             {
                 return 3;
             }
-            else if (number > -10_000 && number < 10_000)
+            else if (number / 10_000 == 0)
             {
                 return 4;
             }
-            else if (number > -100_000 && number < 100_000)
+            else if (number / 100_000 == 0)
             {
                 return 5;
             }
-            else if (number > -1000_000 && number < 1000_000)
+            else if (number / 1_000_000 == 0)
             {
                 return 6;
             }
-            else if (number > -10_000_000 && number < 10_000_000)
+            else if (number / 10_000_000 == 0)
             {
                 return 7;
             }
-            else if (number > -100_000_000 && number < 100_000_000)
+            else if (number / 100_000_000 == 0)
             {
                 return 8;
             }
-            else if (number > -1000_000_000 && number < 1000_000_000)
+            else if (number / 1_000_000_000 == 0)
             {
                 return 9;
             }
