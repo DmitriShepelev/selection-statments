@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace SelectionStatments
 {
@@ -217,7 +216,7 @@ namespace SelectionStatments
         /// <returns>The message with information about the type of integer.</returns>
         public static string GetTypeOfIntegerWithCascadedIfElse(object arg)
         {
-            if (arg != null && arg.GetType() == typeof(sbyte))
+            if (arg is sbyte)
             {
                 return $"{arg} is sbyte.";
             }
